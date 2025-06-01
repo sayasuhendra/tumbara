@@ -21,7 +21,7 @@
                 <div class="relative flex items-center justify-between py-1">
                         <a href="/" class="flex items-center">
 
-                            <img class="w-16" src="{{  url('/storage/images/logoeei.png')}}" alt="">
+                            <img class="w-64" src="{{  url('/storage/images/logo/logo-tumbara-h.png')}}" alt="">
                            {{-- <p class="pl-3 text-2xl font-semibold text-white font-reey">
                             Essential Edu <br>
                             International
@@ -152,7 +152,7 @@
                     <div class="flex flex-col items-center justify-between font-bold text-center text-white md:flex-row">
                         <div>
                             Copyright© <span class="curr-year">2024</span>
-                            <a href="/" class="transition text-primary hover:text-secondary">essentialedu.id</a>
+                            <a href="/" class="transition text-primary hover:text-secondary">tumbara.id</a>
                         </div>
                         <div><a href="mailto:{{  __('contact.email_address')}}" class="transition text-secondary hover:text-primary">Email Us</a></div>
                     </div>
