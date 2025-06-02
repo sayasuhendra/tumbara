@@ -14,6 +14,7 @@ class Photo extends Model
         'deskripsi',
         'cover',
         'photos',
+        'category',
     ];
 
     protected $casts = [

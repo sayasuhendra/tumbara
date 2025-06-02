@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('deskripsi');
             $table->string('cover');
             $table->string('pdf');
+            $table->string('category');
             $table->timestamps();
         });
     }

@@ -114,9 +114,9 @@ public function sendEmail()
                 </div>
                 @include('livewire.why-us')
                 @include('livewire.home-customer')
-                @include('livewire.home-galery')
+                @include('livewire.home-product')
+                {{-- @include('livewire.home-galery') --}}
                 @include('livewire.home-contact')
-                {{-- @include('livewire.home-product') --}}
         </div>
     </div>
     <style>

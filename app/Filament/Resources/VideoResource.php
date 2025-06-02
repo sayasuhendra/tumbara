@@ -30,6 +30,13 @@ class VideoResource extends Resource
                     ->required(),
                 Forms\Components\TextInput::make('deskripsi')
                     ->required(),
+                    Forms\Components\Select::make('category')
+                        ->options([
+                                  'sayuran' => 'Sayuran',
+                                  'seafood' => 'Seafood',
+                                  'daging' => 'Daging',
+                                  'buah' => 'Buah',   
+                        ])->required(),
                 Forms\Components\FileUpload::make('cover')
                     ->required(),
                 Forms\Components\TextInput::make('link')
@@ -44,6 +51,8 @@ class VideoResource extends Resource
                 Tables\Columns\ImageColumn::make('cover')->size(100)
                     ->searchable(),
                 Tables\Columns\TextColumn::make('judul')
+                    ->searchable(),
+                Tables\Columns\TextColumn::make('category')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('deskripsi')
                     ->searchable(),

@@ -163,7 +163,7 @@ new #[Title('Documentary')] class extends Component {
             </div>
             <div class="grid gap-8 mt-10 projects sm:grid-cols-2 lg:grid-cols-3">
                 @foreach ($photos as $photo)
-                    <div class="project" data-filter="photo">
+                    <div class="project" data-filter="{{ $photo->category }}">
                         <div
                             class="relative rounded-3xl border border-transparent bg-white drop-shadow-[5px_10px_80px_rgba(119,128,161,0.15)] transition duration-500 hover:border-secondary hover:bg-secondary/20 dark:bg-gray-dark dark:drop-shadow-none">
                             <a href="/galery/photos/{{ $photo->id }}"
@@ -178,7 +178,7 @@ new #[Title('Documentary')] class extends Component {
                     </div>
                 @endforeach
                 @foreach ($pdfs as $pdf)
-                    <div class="project" data-filter="pdf">
+                    <div class="project" data-filter="{{ $pdf->category }}">
                         <div
                             class="relative rounded-3xl border border-transparent bg-white drop-shadow-[5px_10px_80px_rgba(119,128,161,0.15)] transition duration-500 hover:border-secondary hover:bg-secondary/20 dark:bg-gray-dark dark:drop-shadow-none">
                             <div wire:click="pdfClick('{{ $pdf->judul }}', '{{ $pdf->deskripsi }}', '{{ $pdf->pdf }}')"
@@ -194,7 +194,7 @@ new #[Title('Documentary')] class extends Component {
                     </div>
                 @endforeach
                 @foreach ($videos as $video)
-                    <div class="project" data-filter="video">
+                    <div class="project" data-filter="{{ $video->category }}">
                         <div
                             class="relative rounded-3xl border border-transparent bg-white drop-shadow-[5px_10px_80px_rgba(119,128,161,0.15)] transition duration-500 hover:border-secondary hover:bg-secondary/20 dark:bg-gray-dark dark:drop-shadow-none">
                             <div wire:click="videoClick('{{ $video->judul }}', '{{ $video->deskripsi }}', '{{ $video->link }}')"

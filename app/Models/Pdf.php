@@ -14,5 +14,6 @@ class Pdf extends Model
         'deskripsi',
         'cover',
         'pdf',
+        'category',
     ];
 }

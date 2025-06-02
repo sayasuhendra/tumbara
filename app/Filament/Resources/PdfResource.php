@@ -31,6 +31,13 @@ class PdfResource extends Resource
                     ->required(),
                 Forms\Components\TextInput::make('deskripsi')
                     ->required(),
+                Forms\Components\Select::make('category')
+                    ->options([
+                              'sayuran' => 'Sayuran',
+                              'seafood' => 'Seafood',
+                              'daging' => 'Daging',
+                              'buah' => 'Buah',   
+                    ])->required(),
                 Forms\Components\FileUpload::make('cover')
                     ->required(),
                 Forms\Components\FileUpload::make('pdf')
@@ -46,6 +53,8 @@ class PdfResource extends Resource
                 Tables\Columns\TextColumn::make('judul')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('deskripsi')
+                    ->searchable(),
+                Tables\Columns\TextColumn::make('category')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()
