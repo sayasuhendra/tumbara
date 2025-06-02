@@ -50,19 +50,11 @@ export default {
         extend: {
             content: {
                 'pattern-kotak-biru': 'url("/storage/app/public/images/pattern/pattern-kotak-biru.png")',
-                'pattern-kotak-putih': 'url("/storage/app/public/images/pattern/pattern-kotak-putih.png")',
-                'pattern-x-biru': 'url("/storage/app/public/images/pattern/pattern-x-biru.png")',
-                'pattern-x-putih': 'url("/storage/app/public/images/pattern/pattern-x-putih.png")',
             },
+            // cara pakenya tinggal tambah bg- di depannya contoh bg-tumbara-office
             backgroundImage: {
-                'pattern-kotak-biru': 'url("/storage/app/public/images/pattern/pattern-kotak-biru.png")',
-                'pattern-kotak-putih': 'url("/storage/app/public/images/pattern/pattern-kotak-putih.png")',
-                'pattern-right': 'url("/storage/app/public/images/pattern/pattern-y-right.png")',
-                'pattern-left': 'url("/storage/app/public/images/pattern/pattern-y-left.png")',
-                'pattern-x-biru': 'url("/storage/app/public/images/pattern/pattern-x-biru.png")',
-                'pattern-x-putih': 'url("/storage/app/public/images/pattern/pattern-x-putih.png")',
-                'pattern-bg': 'url("/storage/app/public/images/pattern/inner-page-hero-bg-center.png")',
-                'pattern-bg-r': 'url("/storage/app/public/images/inner-page-hero-bg-pattern.png")',
+                'tumbara-office': 'url("/storage/app/public/images/galery/tumbara-office.jpg")',
+                'tumbara-frozen': 'url("/storage/app/public/images/tumbara/frozen-bg.jpg")',
             },
             animation: {
                 'spin-slow': 'spin 5s linear infinite',

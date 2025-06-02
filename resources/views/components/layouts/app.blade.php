@@ -8,6 +8,7 @@
     {!! seo() !!}
     <link href="{{ asset('vendor/bladewind/css/bladewind-ui.min.css') }}" rel="stylesheet" />
     <link href="{{ asset('vendor/bladewind/css/animate.min.css') }}" rel="stylesheet" />
+    <link href="{{ asset('css/swiper-bundle.min.css') }}" rel="stylesheet" />
 @vite(['resources/css/app.css', 'resources/js/app.js'])
 <script src="{{ asset('vendor/bladewind/js/helpers.js') }}"></script>
 
@@ -20,12 +21,7 @@
             <div class="container">
                 <div class="relative flex items-center justify-between py-1">
                         <a href="/" class="flex items-center">
-
-                            <img class="w-64" src="{{  url('/storage/images/logo/logo-tumbara-h.png')}}" alt="">
-                           {{-- <p class="pl-3 text-2xl font-semibold text-white font-reey">
-                            Essential Edu <br>
-                            International
-                            </p> --}}
+                            <img class="w-64" src="{{  url('/storage/images/logo/logo-tumbara-h.png')}}" alt="Logo PT Tumbara">
                         </a>
 
                     <div class="text-center">
@@ -77,7 +73,8 @@
 
                             </ul>
                         </div>
-                        <ul class="flex items-center gap-5 ltr:pr-5 rtl:pl-5 ltr:lg:pl-5 ltr:lg:pr-0 rtl:lg:pr-5 rtl:lg:pl-0">
+                        {{-- dark mode icon --}}
+                        {{-- <ul class="flex items-center gap-5 ltr:pr-5 rtl:pl-5 ltr:lg:pl-5 ltr:lg:pr-0 rtl:lg:pr-5 rtl:lg:pl-0">
 
                             <li>
                                 <button
@@ -110,7 +107,8 @@
                                     </svg>
                                 </button>
                             </li>
-                        </ul>
+                        </ul> --}}
+                        {{-- Mobile Menu --}}
                         <button type="button" class="flex items-center justify-center w-10 h-10 rounded-full bg-primary lg:hidden" onclick="toggleMenu()">
                             <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-white">
                                 <path
@@ -133,19 +131,18 @@
         </header>
         {{-- <div class="absolute bottom-0 z-[1] h-4 w-[calc(100%_+_100px)] bg-secondary xl:h-80 ltr:xl:-rotate-6 rtl:xl:rotate-6"></div> --}}
 
-        <div class="-mt-[82px] flex-grow overflow-hidden lg:-mt-[106px] text-gray bg-black from-transparent to-transparent">
-            <div class="pt-[82px] lg:pt-[106px]">
+        <div class="flex-grow overflow-hidden bg-black text-gray from-transparent to-transparent">
                 <div class="relative">
                     @yield('header')
                 </div>
-            </div>
-            </div>
+        </div>
         <div class="bg-white bg-gradient-to-r from-[#FCF1F4] to-[#EDFBF9] text-gray dark:bg-black dark:from-transparent dark:to-transparent">
 
         {{ $slot }}
+
         </div>
 
-        <footer class="mt-auto bg-black before:bg-content-pattern-x-biru bofore:bg-cover">
+        <footer class="mt-auto bg-black">
 
             <div class="py-5 bg-black border-t-2 border-white/5 bg-none">
                 <div class="container">
@@ -281,6 +278,7 @@ if (ele?.length) {
         ele[i].innerHTML = fullyear;
     }
 }
+
 </script>
 <x-toaster-hub />
 </body>

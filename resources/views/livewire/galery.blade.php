@@ -103,15 +103,15 @@ new #[Title('Documentary')] class extends Component {
     </x-jendela>
 
     @section('header')
-        <div class="container">
-            <div class="items-center py-10 md:flex md:h-[400px] md:py-0">
-                <div class="heading relative mb-0 md:w-[725px]">
+        <div class="container py-16 md:py-20">
+            <div class="items-center">
+                <div class="relative heading">
                     <h4 class="!text-white">
-                        {{ __('documentary.header') }}
+                        {{ __('galery.header') }}
                     </h4>
                     <p
-                        class="relative mt-7 font-medium text-[#BBC0D0] before:absolute before:top-0 before:h-full before:w-1 before:bg-primary ltr:pl-8 ltr:before:left-0 rtl:pr-8 rtl:before:right-0">
-                        {{ __('documentary.description') }}
+                        class="relative pl-8 text-secondary mt-7 font-xl before:absolute before:top-0 before:h-full before:w-1 before:bg-white before:left-0">
+                        {{ __('galery.description') }}
                     </p>
                 </div>
             </div>
@@ -127,26 +127,26 @@ new #[Title('Documentary')] class extends Component {
                     <li class="active filter" data-filter="all">
                         <button type="button"
                             class="rounded-[10px] py-4 px-5 leading-5 transition text-white capitalize bg-black btn dark:bg-white dark:text-black hover:bg-black">
-                            {{ __('documentary.all') }}
+                            {{ __('galery.all') }}
                         </button>
                     </li>
 
                     <li class="filter" data-filter="photo">
                         <button type="button"
                             class="rounded-[10px] py-4 px-5 leading-5 transition text-white capitalize bg-black btn dark:bg-white dark:text-black hover:bg-black">
-                            foto
+                            {{ __('galery.photo') }}
                         </button>
                     </li>
                     <li class="filter" data-filter="video">
                         <button type="button"
                             class="rounded-[10px] py-4 px-5 leading-5 transition text-white capitalize bg-black btn dark:bg-white dark:text-black hover:bg-black">
-                            video
+                            VIDEO
                         </button>
                     </li>
                     <li class="filter" data-filter="pdf">
                         <button type="button"
                             class="rounded-[10px] py-4 px-5 leading-5 transition text-white capitalize bg-black btn dark:bg-white dark:text-black hover:bg-black">
-                            pdf
+                            PDF
                         </button>
                     </li>
 
@@ -157,7 +157,7 @@ new #[Title('Documentary')] class extends Component {
                     <div class="project" data-filter="photo">
                         <div
                             class="relative rounded-3xl border border-transparent bg-white drop-shadow-[5px_10px_80px_rgba(119,128,161,0.15)] transition duration-500 hover:border-secondary hover:bg-secondary/20 dark:bg-gray-dark dark:drop-shadow-none">
-                            <a href="/dokumentasi/photos/{{ $photo->id }}"
+                            <a href="/galery/photos/{{ $photo->id }}"
                                 class="absolute top-0 w-full h-full ltr:left-0 rtl:right-0"></a>
                             <img src="{{ url('/storage/' . $photo->cover) }}" alt="project-1"
                                 class="object-cover w-full h-52 rounded-t-3xl" />
