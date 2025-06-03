@@ -8,4 +8,5 @@ return [
     'seafood' => 'Seafood',
     'daging' => 'Meets',
     'buah' => 'Fruits',
+    'galery' => 'Galery',
 ];

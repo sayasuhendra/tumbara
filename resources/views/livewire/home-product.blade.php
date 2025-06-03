@@ -95,6 +95,13 @@
                                                   </button>
                                         </li>
 
+                                        <li class="filter" data-filter="galery">
+                                                  <button type="button"
+                                                            class="rounded-[10px] py-4 px-5 leading-5 transition text-white capitalize bg-black btn dark:bg-white dark:text-black hover:bg-black">
+                                                            {{ __('product.galery') }}
+                                                  </button>
+                                        </li>
+
                               </ul>
                     </div>
                     <div class="grid gap-8 mt-10 projects sm:grid-cols-2 lg:grid-cols-3">

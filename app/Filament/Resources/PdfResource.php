@@ -36,7 +36,8 @@ class PdfResource extends Resource
                               'sayuran' => 'Sayuran',
                               'seafood' => 'Seafood',
                               'daging' => 'Daging',
-                              'buah' => 'Buah',   
+                              'buah' => 'Buah',
+                              'galery' => 'Galery',
                     ])->required(),
                 Forms\Components\FileUpload::make('cover')
                     ->required(),

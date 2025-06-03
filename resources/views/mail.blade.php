@@ -1,5 +1,5 @@
 <div>
-    Ada Pesan dari Pengunjung Website essentialedu.id dengan detail berikut: <br> <br>
+    Ada Pesan dari Pengunjung Website tumbara.id dengan detail berikut: <br> <br>
     Name : {{ $data["name"] }} <br> <br>
     Email : {{ $data["email"] }} <br> <br>
     Handphone : {{ $data["handphone"] }} <br> <br>
