@@ -12,7 +12,7 @@ return [
     /**
      * Use this setting to specify the site name that will be used in OpenGraph tags.
      */
-    'site_name' => 'https://essentialedu.id',
+    'site_name' => 'https://tumbara.id',
 
     /**
      * Use this setting to specify the path to the sitemap of your website. This exact path will outputted, so
@@ -75,14 +75,14 @@ return [
          * Use this setting to provide a suffix that will be added after the title on each page.
          * If you don't want a suffix, you should specify an empty string.
          */
-        'suffix' => 'EEI',
+        'suffix' => 'PT Tumbara',
 
         /**
          * Use this setting to provide a custom title for the homepage. We will not use the suffix on the homepage,
          * so you'll need to add the suffix manually if you want that. If set to null, we'll determine the title
          * just like the other pages.
          */
-        'homepage_title' => 'Essential Edu International',
+        'homepage_title' => 'PT Tumbara',
     ],
 
     'description' => [
@@ -91,7 +91,8 @@ return [
          * where we don't have a description set via an associated ->seo model or via
          * the ->getDynamicSEOData() method.
          */
-        'fallback' => 'Kami menyediakan program Experience Learning di Malaysia, Kanada dan Australia. Memberikan para pelajar pengalaman pendidikan international di College dan University. Selain pengalaman belajar, mereka juga berkesempatan untuk bertukar pendapat dengan pelajar lokal, berbagi informasi tentang perbedaan culture dan budaya, dan tidak lupa juga menikmati tempat-tempat wisata.',
+        'fallback' => 'Distributor Dan Penyedia Produk Pangan Segar Beku
+(Seafood, Daging, Buah Dan Sayuran)',
     ],
 
     'image' => [
@@ -101,7 +102,7 @@ return [
          * This should be a path to an image. The url to the path is generated using the `secure_url()` function
          * (`secure_url($yourProvidedPath)`), so make sure the image is accessible from the public folder.
          */
-        'fallback' => '/storage/images/eei-sosmed.png',
+        'fallback' => '/storage/images/logo/logo-tumbara-website.png',
     ],
 
     'author' => [
@@ -109,7 +110,7 @@ return [
          * Use this setting to specify a fallback author, which will be used on places where you
          * don't have an author set via an associated ->seo model or via the ->getDynamicSEOData() method.
          */
-        'fallback' => 'Essential Edu International',
+        'fallback' => 'PT Tumbara',
     ],
 
     'twitter' => [

@@ -31,7 +31,7 @@ class extends Component {
         $this->validate();
         Toaster::error('Terima Kasih. Pesan akan kami respon segera.');
         try {
-            $response = Mail::to('info@essentialedu.id')->send(new UserMessageMail($this->all()));
+            $response = Mail::to('contact@tumbara.id')->send(new UserMessageMail($this->all()));
         } catch (\Throwable $th) {
 
         }

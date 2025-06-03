@@ -28,12 +28,11 @@ class UserMessageMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            from: new Address('admin@essentialedu.id', 'Email Sender Web EEI'),
+            from: new Address('contact@tumbara.id', 'Email Sender Web PT Tumbara'),
             replyTo: [
-                new Address('info@essentialedu.id', 'Info EEI'),
-                new Address('cs@essentialedu.id', 'CS EEI'),
+                new Address('sayasuhendra@gmail.com', 'Info PT Tumbara'),
             ],
-            subject: 'Pesan Pengunjung Web EEI',
+            subject: 'Pesan Pengunjung Web PT Tumbara',
         );
     }
 

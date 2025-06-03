@@ -13,7 +13,7 @@ class CreateSitemap extends Command
      *
      * @var string
      */
-    protected $signature = 'eei:create-sitemap';
+    protected $signature = 'tumbara:create-sitemap';
 
     /**
      * The console command description.
@@ -27,6 +27,6 @@ class CreateSitemap extends Command
      */
     public function handle()
     {
-        SitemapGenerator::create('https://essentialedu.id/')->writeToFile(Storage::path('public/sitemap.xml'));
+        SitemapGenerator::create('https://tumbara.id/')->writeToFile(Storage::path('public/sitemap.xml'));
     }
 }
