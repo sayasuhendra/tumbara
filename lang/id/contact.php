@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'header' => 'Hubungi kami',
+    'header' => 'Hubungi Kami',
     'description' => [
         1 => 'Mari bicara dengan kami',
         2 => 'Pertanyaan, komentar atau saran?',

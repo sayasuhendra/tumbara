@@ -53,8 +53,8 @@
 <section class="bg-gradient-to-t from-white/[55%] to-transparent py-14 dark:bg-black lg:py-[100px]">
 <div class="container">
                     <div class="text-center heading">
-                              <h6 class="!text-primary">Product and Galery</h6>
-                              <h4>Our Product and Galery Collections</h4>
+                        <h4>{{ __('home.product.title') }}</h4>
+                        <h6 class="!text-primary">{{ __('home.product.description') }}</h6>
                     </div>      </div>
           <div class="container">
                     <div class="overflow-x-auto">

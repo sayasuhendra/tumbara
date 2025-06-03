@@ -1,6 +1,6 @@
 <section class="py-14 dark:bg-gray-dark lg:py-[100px]">
     <h3 class="text-2xl font-bold text-center text-black dark:text-white">
-        Used and <span class="text-primary">loved</span> by industry leaders
+        {{ __('home.customer') }}
     </h3>
     <div class="mt-10 swiper LogoSlider lg:mt-14">
         <div class="swiper-wrapper">

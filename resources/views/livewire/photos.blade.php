@@ -3,15 +3,61 @@
 use Livewire\Volt\Component;
 use App\Models\Photo;
 use Livewire\Attributes\{Title};
+use App\Models\Pdf;
+use App\Models\Video;
 
 new
 #[Title('Gallery')]
 class extends Component {
     public Photo $photo;
 
+    public $foto;
+    public $pdf = '';
+    public $video = '';
+    public $judul = '';
+    public $deskripsi = '';
+
     public function mount($id)
     {
         $this->photo = Photo::findOrFail($id);
+    }
+
+    public function with(): array
+    {
+    return [
+    'pdfs' => Pdf::all(),
+    'videos' => Video::all(),
+    'photos' => Photo::all(),
+    ];
+    }
+
+    public function photoClick($photo)
+    {
+    $this->foto = 'lucu';
+
+    $this->dispatch('open-modal', name: 'photo');
+    }
+
+    public function videoClick($judul, $deskripsi, $video)
+    {
+
+    $queryString = parse_url($video, PHP_URL_QUERY);
+    parse_str($queryString, $queryParams);
+    $youtubeId = $queryParams['v'] ?? '';
+    $this->video = "https://www.youtube.com/embed/" . $youtubeId;
+    $this->judul = $judul;
+    $this->deskripsi = $deskripsi;
+
+    $this->dispatch('open-modal', name: 'video', judul: $this->judul, deskripsi: $this->deskripsi, video: $this->video);
+    }
+
+    public function pdfClick($judul, $deskripsi, $pdf)
+    {
+    $this->pdf = $pdf;
+    $this->judul = $judul;
+    $this->deskripsi = $deskripsi;
+
+    $this->dispatch('open-modal', name: 'pdf', judul: $this->judul, deskripsi: $this->deskripsi, pdf: $this->pdf);
     }
 
 }; ?>
@@ -47,6 +93,8 @@ class extends Component {
 </div>
 
 </section>
+@include('livewire.home-product')
+
 
 </div>
 

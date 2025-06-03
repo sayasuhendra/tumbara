@@ -24,9 +24,8 @@
                         class="absolute -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2" />
                 </div>
                 <h2 class="text-2xl font-bold leading-tight text-black line-clamp-1 dark:text-white md:text-[32px]">
-                    Experienced</h2>
-                <p>Telah ada sejak 2021 dimana terbangun jaringan supply seluruh Indonesia pada pusat perikanan dan juga relasi dengan
-                customer existing.</p>
+                    {{ __('home.experienced.title') }}</h2>
+                <p>{{ __('home.experienced.description') }}</p>
             </div>
             <div class="space-y-5 group">
                 <div class="relative top-0 transition-all duration-500 group-hover:-top-5">
@@ -40,9 +39,9 @@
                         class="absolute -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2" />
                 </div>
                 <h2 class="text-2xl font-bold leading-tight text-black line-clamp-1 dark:text-white md:text-[32px]">
-                    Secure</h2>
-                <p>Melalui proses bisnis yang sudah berjalan lama, Tumbara dapat mengeliminasi customer dengan tingkat pembayaran yang
-                rendah sehingga proses bisnis lebih aman.</p>
+                    {{ __('home.secure.title') }}
+                </h2>
+                <p>{{ __('home.secure.description') }}</p>
             </div>
             <div class="space-y-5 group">
                 <div class="relative top-0 transition-all duration-500 group-hover:-top-5">
@@ -56,9 +55,9 @@
                         class="absolute -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2" />
                 </div>
                 <h2 class="text-2xl font-bold leading-tight text-black line-clamp-1 dark:text-white md:text-[32px]">
-                    Fast Growth
+                    {{ __('home.fast.title') }}
                 </h2>
-                <p>Tersedianya data customer yang telah dikumpulkan sejak 2023 menjadikan Tumbara perusahaan yang siap tumbuh cepat.</p>
+                <p>{{ __('home.fast.description') }}</p>
             </div>
         </div>
     </div>
